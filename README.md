@@ -1,7 +1,7 @@
 # 👋 Hi, I'm Teesha Verma
 
 🎓 3rd Year B.Tech CSE Student | 💡 Aspiring AI/ML Engineer | 🌐 Web Developer in Progress  
-🎯 Azure AI-900 Certified | 💻 Curious Creator | 🧠 Future-Ready Problem Solver  
+ | 💻 Curious Creator | 🧠 Future-Ready Problem Solver  
 
 ---
 
@@ -49,14 +49,6 @@ With a deep desire to create intelligent, impactful systems, I’m learning to b
 
 ---
 
-## 🎯 2025 Goals
-
-- Crack internships in AI/ML or Backend  
-- Build and publish 3+ impactful AI projects  
-- Publish my developer portfolio website  
-- Collaborate on open-source AI projects  
-
----
 
 ## 🌐 Connect with Me
 
