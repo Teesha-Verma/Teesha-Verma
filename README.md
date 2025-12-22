@@ -36,7 +36,7 @@ With a deep desire to create intelligent, impactful systems, I’m learning to b
 
 - 🔧 Building Python mini-projects (ML + automation)
 - 🌱 Exploring the MERN stack
-- 🤖 Starting with scikit-learn + ML projects
+- 🤖 Exploring **Generative AI concepts and LLM-based applications*
 
 ---
 
@@ -48,7 +48,12 @@ With a deep desire to create intelligent, impactful systems, I’m learning to b
 - 🎮 AI Game with Python + ML Logic
 
 ---
+## Opportunities
+- Seeking **internships in AI/ML**
+- Open to **open-source collaborations**
+- Interested in real-world ML and data-focused projects
 
+---
 
 ## 🌐 Connect with Me
 
