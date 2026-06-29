@@ -65,9 +65,8 @@ I'm actively learning cloud-native technologies and building production-ready pr
 
 ### 📫 Connect With Me
 
-- 💼 LinkedIn: *Add your LinkedIn URL*
-- 📧 Email: *Add your email*
-- 🌐 Portfolio: *Coming Soon*
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/teesha-verma-a552b4339/)
+[![Email](https://img.shields.io/badge/Email-teeshaverma1@gmail.com-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:teeshaverma1@gmail.com)
 
 ---
 
