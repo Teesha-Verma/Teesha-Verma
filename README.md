@@ -4,7 +4,7 @@
 
 ### 🚀 About Me
 
-I'm Teesha Verma, a B.Tech Computer Science student at GLA University, passionate about building scalable cloud-native data solutions and intelligent AI applications.
+I'm Teesha Verma, a 4th year B.Tech Computer Science student at GLA University, passionate about building scalable cloud-native data solutions and intelligent AI applications.
 
 I enjoy designing end-to-end data pipelines, working with modern data engineering technologies, and developing AI-powered systems that solve real-world problems. I'm currently focused on becoming a Cloud-Native Data Engineer while continuously improving my software engineering, cloud, and data engineering skills.
 
