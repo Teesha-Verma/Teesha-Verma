@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 36" width="150" height="36">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
+      
+      .btn-body {
+        fill: #050816;
+        fill-opacity: 0.85;
+        stroke: #2ECC71;
+        stroke-width: 1.5;
+        transition: all 0.3s ease;
+      }
+      
+      .btn-text {
+        font-family: 'Share Tech Mono', 'Consolas', 'Courier New', monospace;
+        font-size: 13px;
+        fill: #57F287;
+        font-weight: bold;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+      }
+      
+      .btn-icon {
+        fill: #57F287;
+        transition: all 0.3s ease;
+      }
+
+      .btn-g:hover .btn-body {
+        fill: #0A122E;
+        stroke: #57F287;
+        filter: url(#btn-glow);
+      }
+      
+      .btn-g:hover .btn-text {
+        fill: #FFFFFF;
+      }
+
+      .btn-g:hover .btn-icon {
+        fill: #FFFFFF;
+      }
+    </style>
+    
+    <filter id="btn-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g class="btn-g" style="cursor: pointer;">
+    <!-- Button Background -->
+    <rect class="btn-body" x="1" y="1" width="148" height="34" rx="6" />
+
+    <!-- Pixel Art LinkedIn Icon (approx 16x16) -->
+    <!-- Scale it and translate it -->
+    <g class="btn-icon" transform="translate(16, 10)">
+      <!-- Outline/Base square -->
+      <path d="M 0 0 h 16 v 16 h -16 Z M 2 2 v 12 h 12 v -12 Z" />
+      <!-- Letter 'i' -->
+      <rect x="4" y="4" width="2" height="2" />
+      <rect x="4" y="7" width="2" height="5" />
+      <!-- Letter 'n' -->
+      <rect x="8" y="7" width="4" height="2" />
+      <rect x="8" y="9" width="2" height="3" />
+      <rect x="11" y="9" width="2" height="3" />
+    </g>
+
+    <!-- Button Text -->
+    <text class="btn-text" x="46" y="22">LINKEDIN</text>
+    
+    <!-- Small cyber corner markers -->
+    <rect x="4" y="4" width="2" height="2" fill="#57F287" opacity="0.3" />
+    <rect x="144" y="30" width="2" height="2" fill="#57F287" opacity="0.3" />
+  </g>
+</svg>

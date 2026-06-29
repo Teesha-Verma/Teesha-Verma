@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 130" width="200" height="130">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
+      
+      .decor-text {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 8px;
+        fill: #3E5B45;
+      }
+      
+      .glow-border {
+        filter: url(#glow);
+      }
+    </style>
+    
+    <filter id="glow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Bunny Paths -->
+    <g id="bunny-shape">
+      <!-- White Body -->
+      <path d="M 2 2 h 3 v 1 h -3 Z M 13 2 h 3 v 1 h -3 Z M 2 3 h 1 v 1 h -1 Z M 4 3 h 1 v 1 h -1 Z M 13 3 h 1 v 1 h -1 Z M 15 3 h 1 v 1 h -1 Z M 2 4 h 1 v 1 h -1 Z M 4 4 h 1 v 1 h -1 Z M 13 4 h 1 v 1 h -1 Z M 15 4 h 1 v 1 h -1 Z M 2 5 h 1 v 1 h -1 Z M 4 5 h 1 v 1 h -1 Z M 13 5 h 1 v 1 h -1 Z M 15 5 h 1 v 1 h -1 Z M 2 6 h 1 v 1 h -1 Z M 4 6 h 1 v 1 h -1 Z M 13 6 h 1 v 1 h -1 Z M 15 6 h 1 v 1 h -1 Z M 3 7 h 2 v 1 h -2 Z M 7 7 h 4 v 1 h -4 Z M 13 7 h 2 v 1 h -2 Z M 3 8 h 12 v 1 h -12 Z M 2 9 h 14 v 1 h -14 Z M 1 10 h 16 v 1 h -16 Z M 1 11 h 2 v 1 h -2 Z M 4 11 h 8 v 1 h -8 Z M 13 11 h 4 v 1 h -4 Z M 1 12 h 16 v 1 h -16 Z M 1 13 h 1 v 1 h -1 Z M 4 13 h 4 v 1 h -4 Z M 9 13 h 4 v 1 h -4 Z M 15 13 h 2 v 1 h -2 Z M 1 14 h 1 v 1 h -1 Z M 4 14 h 3 v 1 h -3 Z M 8 14 h 1 v 1 h -1 Z M 10 14 h 3 v 1 h -3 Z M 15 14 h 2 v 1 h -2 Z M 2 15 h 14 v 1 h -14 Z M 4 16 h 10 v 1 h -10 Z M 2 17 h 14 v 1 h -14 Z M 1 18 h 16 v 1 h -16 Z M 1 19 h 16 v 1 h -16 Z M 1 20 h 16 v 1 h -16 Z M 2 21 h 14 v 1 h -14 Z M 3 22 h 2 v 1 h -2 Z M 7 22 h 4 v 1 h -4 Z M 13 22 h 2 v 1 h -2 Z M 3 23 h 2 v 1 h -2 Z M 7 23 h 4 v 1 h -4 Z M 13 23 h 2 v 1 h -2 Z" fill="#FFFFFF" />
+      <!-- Pink Ears -->
+      <path d="M 3 3 h 1 v 1 h -1 Z M 14 3 h 1 v 1 h -1 Z M 3 4 h 1 v 1 h -1 Z M 14 4 h 1 v 1 h -1 Z M 3 5 h 1 v 1 h -1 Z M 14 5 h 1 v 1 h -1 Z M 3 6 h 1 v 1 h -1 Z M 14 6 h 1 v 1 h -1 Z" fill="#FFAEBC" />
+      <!-- Blush Cheeks -->
+      <path d="M 2 13 h 2 v 1 h -2 Z M 13 13 h 2 v 1 h -2 Z M 2 14 h 2 v 1 h -2 Z M 13 14 h 2 v 1 h -2 Z" fill="#FF8B94" />
+      <!-- Eyes & Mouth (looking right) -->
+      <path d="M 5 11 h 1 v 1 h -1 Z M 14 11 h 1 v 1 h -1 Z M 9 13 h 1 v 1 h -1 Z M 8 14 h 1 v 1 h -1 Z M 10 14 h 1 v 1 h -1 Z" fill="#1A252C" />
+      <!-- Outline -->
+      <path d="M 2 1 h 3 v 1 h -3 Z M 13 1 h 3 v 1 h -3 Z M 1 2 h 1 v 1 h -1 Z M 5 2 h 1 v 1 h -1 Z M 12 2 h 1 v 1 h -1 Z M 16 2 h 1 v 1 h -1 Z M 1 3 h 1 v 1 h -1 Z M 5 3 h 1 v 1 h -1 Z M 12 3 h 1 v 1 h -1 Z M 16 3 h 1 v 1 h -1 Z M 1 4 h 1 v 1 h -1 Z M 5 4 h 1 v 1 h -1 Z M 12 4 h 1 v 1 h -1 Z M 16 4 h 1 v 1 h -1 Z M 1 5 h 1 v 1 h -1 Z M 5 5 h 1 v 1 h -1 Z M 12 5 h 1 v 1 h -1 Z M 16 5 h 1 v 1 h -1 Z M 1 6 h 1 v 1 h -1 Z M 5 6 h 1 v 1 h -1 Z M 7 6 h 4 v 1 h -4 Z M 12 6 h 1 v 1 h -1 Z M 16 6 h 1 v 1 h -1 Z M 2 7 h 1 v 1 h -1 Z M 5 7 h 2 v 1 h -2 Z M 11 7 h 2 v 1 h -2 Z M 15 7 h 1 v 1 h -1 Z M 2 8 h 1 v 1 h -1 Z M 15 8 h 1 v 1 h -1 Z M 1 9 h 1 v 1 h -1 Z M 16 9 h 1 v 1 h -1 Z M 0 10 h 1 v 1 h -1 Z M 17 10 h 1 v 1 h -1 Z M 0 11 h 1 v 1 h -1 Z M 17 11 h 1 v 1 h -1 Z M 0 12 h 1 v 1 h -1 Z M 17 12 h 1 v 1 h -1 Z M 0 13 h 1 v 1 h -1 Z M 17 13 h 1 v 1 h -1 Z M 0 14 h 1 v 1 h -1 Z M 17 14 h 1 v 1 h -1 Z M 1 15 h 1 v 1 h -1 Z M 16 15 h 1 v 1 h -1 Z M 2 16 h 2 v 1 h -2 Z M 14 16 h 2 v 1 h -2 Z M 1 17 h 1 v 1 h -1 Z M 16 17 h 1 v 1 h -1 Z M 0 18 h 1 v 1 h -1 Z M 17 18 h 1 v 1 h -1 Z M 0 19 h 1 v 1 h -1 Z M 17 19 h 1 v 1 h -1 Z M 0 20 h 1 v 1 h -1 Z M 17 20 h 1 v 1 h -1 Z M 1 21 h 1 v 1 h -1 Z M 16 21 h 1 v 1 h -1 Z M 2 22 h 1 v 1 h -1 Z M 5 22 h 2 v 1 h -2 Z M 11 22 h 2 v 1 h -2 Z M 15 22 h 1 v 1 h -1 Z M 3 23 h 2 v 1 h -2 Z M 7 23 h 4 v 1 h -4 Z M 13 23 h 2 v 1 h -2 Z" fill="#1A252C" />
+    </g>
+  </defs>
+
+  <!-- Container Box -->
+  <rect x="1" y="1" width="198" height="128" rx="8" fill="#080C1E" fill-opacity="0.9" stroke="#00C896" stroke-width="1.5" class="glow-border" />
+  
+  <!-- Cyber Grid overlay -->
+  <path d="M 0 20 h 200 M 0 40 h 200 M 0 60 h 200 M 0 80 h 200 M 0 100 h 200" fill="none" stroke="#2ECC71" stroke-width="0.5" opacity="0.04" />
+  <path d="M 40 0 v 130 M 80 0 v 130 M 120 0 v 130 M 160 0 v 130" fill="none" stroke="#2ECC71" stroke-width="0.5" opacity="0.04" />
+
+  <!-- Steam rising from coffee (Looping animations) -->
+  <g transform="translate(133, 56)">
+    <!-- Steam 1 -->
+    <path d="M 0 8 Q -2 4 0 0" fill="none" stroke="#57F287" stroke-width="1" opacity="0.8">
+      <animate attributeName="d" values="M 0 8 Q -2 4 0 0; M 0 8 Q 2 4 0 0; M 0 8 Q -2 4 0 0" dur="2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.8; 0.2; 0.8" dur="2s" repeatCount="indefinite" />
+    </path>
+    <!-- Steam 2 -->
+    <path d="M 4 8 Q 6 4 4 0" fill="none" stroke="#00C896" stroke-width="1" opacity="0.4">
+      <animate attributeName="d" values="M 4 8 Q 6 4 4 0; M 4 8 Q 2 4 4 0; M 4 8 Q 6 4 4 0" dur="2.2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.2; 0.8; 0.2" dur="2.2s" repeatCount="indefinite" />
+    </path>
+  </g>
+
+  <!-- Laptop Stand and Table Setup -->
+  <!-- Table Top -->
+  <rect x="15" y="80" width="170" height="4" fill="#5A3A22" rx="1" />
+  <!-- Table Legs -->
+  <rect x="30" y="84" width="4" height="28" fill="#442B1A" />
+  <rect x="166" y="84" width="4" height="28" fill="#442B1A" />
+
+  <!-- Coffee Cup (Pixel Art) -->
+  <g transform="translate(130, 68)">
+    <rect x="0" y="0" width="10" height="12" fill="#FFFFFF" stroke="#1A252C" stroke-width="1" />
+    <!-- Cup handle -->
+    <path d="M 10 2 h 3 v 5 h -3" fill="none" stroke="#1A252C" stroke-width="1" />
+    <!-- Drink color inside -->
+    <rect x="1" y="1" width="8" height="2" fill="#5A3A22" />
+  </g>
+
+  <!-- Laptop Setup -->
+  <g transform="translate(85, 54)">
+    <!-- Screen (Angle) -->
+    <polygon points="12,26 30,2 34,2 16,26" fill="#2C3E50" stroke="#1A252C" stroke-width="1" />
+    <!-- Screen Glow Surface -->
+    <polygon points="14,24 29,4 32,4 17,24" fill="#2ECC71" opacity="0.8" class="glow-border">
+      <animate attributeName="opacity" values="0.8;0.5;0.8" dur="1.5s" repeatCount="indefinite" />
+    </polygon>
+    <!-- Base Keyboard -->
+    <polygon points="0,26 18,26 14,30 -4,30" fill="#34495E" stroke="#1A252C" stroke-width="1" />
+  </g>
+
+  <!-- Standing Bunny Mascot (facing desk) -->
+  <use href="#bunny-shape" transform="translate(25, 32) scale(2)" />
+
+  <!-- Animated Hands (simulate typing on keyboard) -->
+  <!-- Keyboard area in absolute coords is roughly x=80..103, y=80 -->
+  <g>
+    <!-- Hand 1 -->
+    <rect x="83" y="76" width="4" height="3" fill="#FFFFFF" stroke="#1A252C" stroke-width="0.5">
+      <animate attributeName="x" values="83; 88; 81; 85; 83" dur="0.8s" repeatCount="indefinite" />
+      <animate attributeName="y" values="76; 75; 77; 76; 76" dur="0.8s" repeatCount="indefinite" />
+    </rect>
+    <!-- Hand 2 -->
+    <rect x="91" y="76" width="4" height="3" fill="#FFFFFF" stroke="#1A252C" stroke-width="0.5">
+      <animate attributeName="x" values="91; 87; 93; 89; 91" dur="0.9s" repeatCount="indefinite" />
+      <animate attributeName="y" values="76; 77; 75; 76; 76" dur="0.9s" repeatCount="indefinite" />
+    </rect>
+  </g>
+
+  <!-- Floating Code Symbols (Rising and fading) -->
+  <!-- Symbol 1: </> -->
+  <g transform="translate(112, 38)">
+    <text font-family="'Share Tech Mono', monospace" font-size="8" fill="#57F287" x="0" y="0">
+      &lt;/&gt;
+      <animate attributeName="transform" type="translate" values="0,0; 8,-25" dur="2.8s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;1;0" dur="2.8s" repeatCount="indefinite" />
+    </text>
+  </g>
+  <!-- Symbol 2: 1 -->
+  <g transform="translate(102, 45)">
+    <text font-family="'Share Tech Mono', monospace" font-size="7" fill="#00C896" x="0" y="0">
+      1
+      <animate attributeName="transform" type="translate" values="0,0; -6,-20" dur="2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.9;0" dur="2s" repeatCount="indefinite" />
+    </text>
+  </g>
+  <!-- Symbol 3: 0 -->
+  <g transform="translate(122, 48)">
+    <text font-family="'Share Tech Mono', monospace" font-size="7" fill="#57F287" x="0" y="0">
+      0
+      <animate attributeName="transform" type="translate" values="0,0; 2,-22" dur="2.4s" begin="1s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.9;0" dur="2.4s" begin="1s" repeatCount="indefinite" />
+    </text>
+  </g>
+
+  <!-- System Decorative Text -->
+  <text x="15" y="120" class="decor-text">&lt;CURRENTLY_ACTIVE&gt;</text>
+  <text x="185" y="120" class="decor-text" text-anchor="end">COFFEE_LVL: 75%</text>
+</svg>
