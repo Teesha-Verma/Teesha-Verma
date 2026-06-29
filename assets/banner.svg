@@ -80,19 +80,37 @@
       
       @keyframes jump-around {
         0%, 100% {
-          transform: translate(525px, 140px) rotate(0deg);
+          transform: translate(525px, 170px) scale(1.8) rotate(0deg);
         }
-        20% {
-          transform: translate(670px, 90px) rotate(5deg);
+        10% {
+          transform: translate(525px, 175px) scale(1.8, 1.5) rotate(0deg);
+        }
+        25% {
+          transform: translate(585px, 60px) scale(1.6, 2.0) rotate(5deg);
+        }
+        35% {
+          transform: translate(650px, 90px) scale(1.8) rotate(0deg);
         }
         40% {
-          transform: translate(690px, 110px) rotate(0deg); /* platform 2 */
+          transform: translate(670px, 139px) scale(1.8, 1.5) rotate(0deg);
         }
-        60% {
-          transform: translate(820px, 95px) rotate(-5deg);
+        45%, 50% {
+          transform: translate(670px, 139px) scale(1.8) rotate(0deg);
         }
-        80% {
-          transform: translate(840px, 110px) rotate(0deg); /* platform 3 */
+        55% {
+          transform: translate(670px, 144px) scale(1.8, 1.5) rotate(0deg);
+        }
+        68% {
+          transform: translate(740px, 70px) scale(1.6, 2.0) rotate(-5deg);
+        }
+        78% {
+          transform: translate(800px, 95px) scale(1.8) rotate(0deg);
+        }
+        85% {
+          transform: translate(820px, 139px) scale(1.8, 1.5) rotate(0deg);
+        }
+        90%, 95% {
+          transform: translate(820px, 139px) scale(1.8) rotate(0deg);
         }
       }
     </style>
@@ -194,7 +212,7 @@
   <g transform="translate(40, 25)">
     <!-- Thin red/orange line -->
     <rect x="0" y="0" width="80" height="3" fill="#FF5E7E" />
-    <text class="terminal-title" x="95" y="4">Greetings, wanderer! I'm TEESHA!</text>
+    <text class="terminal-title" x="95" y="10">Greetings, wanderer! I'm TEESHA!</text>
   </g>
 
   <!-- Greetings -->
