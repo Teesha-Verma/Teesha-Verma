@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 220" width="300" height="220">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
+      .title {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 13px;
+        fill: #FF75A0;
+        font-weight: bold;
+      }
+      .desc {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 11px;
+        fill: #C5C9DB;
+      }
+      .tags {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 10px;
+        fill: #FF75A0;
+      }
+      .card-bg {
+        fill: #050814;
+        fill-opacity: 0.9;
+        stroke: #FF75A0;
+        stroke-opacity: 0.3;
+        stroke-width: 1.2;
+        transition: all 0.3s ease;
+      }
+      svg:hover .card-bg {
+        stroke-opacity: 1;
+        stroke: #FF75A0;
+        filter: url(#glow);
+      }
+    </style>
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect class="card-bg" width="300" height="220" rx="8" />
+
+  <!-- Top bar (Icon + Title) -->
+  <g transform="translate(15, 15)">
+    <!-- Shield Icon -->
+    <path d="M 0 3 C 0 1, 8 0, 8 0 C 8 0, 16 1, 16 3 C 16 9, 8 13, 8 13 C 8 13, 0 9, 0 3 Z" fill="none" stroke="#FF75A0" stroke-width="1.5" />
+    <text class="title" x="24" y="11">CodeGuard</text>
+  </g>
+
+  <!-- Illustration (Computer Screen + Shield + Lock) -->
+  <g transform="translate(85, 42)">
+    <!-- Monitor Base -->
+    <rect x="15" y="42" width="100" height="6" fill="#1C253C" rx="1" />
+    <polygon points="50,34 80,34 74,42 56,42" fill="#1A253C" />
+    <!-- Screen Frame -->
+    <rect x="25" y="0" width="80" height="36" rx="4" fill="#0A0F24" stroke="#1A253C" stroke-width="1.5" />
+    <!-- Glowing Code representation -->
+    <line x1="30" y1="6" x2="60" y2="6" stroke="#2C3E50" stroke-width="2" />
+    <line x1="30" y1="12" x2="50" y2="12" stroke="#2C3E50" stroke-width="2" />
+    <!-- Shield lock overlay -->
+    <g transform="translate(68, 8)">
+      <polygon points="12,0 24,4 20,16 12,22 4,16 0,4" fill="#FF75A0" opacity="0.8" />
+      <!-- Lock -->
+      <rect x="8" y="10" width="8" height="6" rx="1" fill="#FFFFFF" />
+      <path d="M 10 10 v -2 a 2 2 0 0 1 4 0 v 2" fill="none" stroke="#FFFFFF" stroke-width="1" />
+    </g>
+    <!-- Magnifying Glass -->
+    <g transform="translate(86, 26)">
+      <circle cx="5" cy="5" r="3.5" fill="none" stroke="#8BE9FD" stroke-width="1.5" />
+      <line x1="8" y1="8" x2="13" y2="13" stroke="#8BE9FD" stroke-width="1.5" />
+    </g>
+  </g>
+
+  <!-- Description -->
+  <g transform="translate(15, 115)">
+    <text class="desc" x="0" y="15">AI-powered secure code analysis platform</text>
+    <text class="desc" x="0" y="31">with intelligent vulnerability detection,</text>
+    <text class="desc" x="0" y="47">reasoning engine &amp; confidence scoring.</text>
+  </g>
+
+  <!-- Tags -->
+  <g transform="translate(15, 185)">
+    <!-- Bullet -->
+    <circle cx="4" cy="7" r="3" fill="#FF75A0" />
+    <text class="tags" x="12" y="10">AI • Security • FastAPI • Angular • PostgreSQL</text>
+  </g>
+</svg>

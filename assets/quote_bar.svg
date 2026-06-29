@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 40" width="920" height="40">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
+      
+      .quote-text {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 14.5px;
+        fill: #FF75A0;
+        font-weight: bold;
+        text-anchor: middle;
+      }
+      
+      .bar-bg {
+        fill: #050814;
+        fill-opacity: 0.9;
+        stroke: #1A253C;
+        stroke-width: 1.2;
+        transition: all 0.3s ease;
+      }
+      
+      svg:hover .bar-bg {
+        stroke: #FF75A0;
+        filter: url(#glow);
+      }
+    </style>
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Frame -->
+  <rect class="bar-bg" x="0.5" y="0.5" width="919" height="39" rx="6" />
+
+  <!-- Stars -->
+  <!-- Left Star -->
+  <polygon points="120,13 122,17 127,17 123,20 125,25 120,22 115,25 117,20 113,17 118,17" fill="#FFD166" />
+  <!-- Right Star -->
+  <polygon points="800,13 802,17 807,17 803,20 805,25 800,22 795,25 797,20 793,17 798,17" fill="#FFD166" />
+
+  <!-- Quote Text -->
+  <text class="quote-text" x="460" y="25">"Don't just write code. Build systems that solve real-world problems and scale."</text>
+</svg>

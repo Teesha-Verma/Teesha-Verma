@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 240" width="480" height="240">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;family=Share+Tech+Mono&amp;display=swap');
+      
+      .title-text {
+        font-family: 'Press Start 2P', monospace;
+        font-size: 11px;
+        fill: #FFB86C;
+        font-weight: bold;
+      }
+      
+      .body-text {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 14px;
+        fill: #C5C9DB;
+      }
+      
+      .bullet-symbol {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 14px;
+        fill: #FFB86C;
+        font-weight: bold;
+      }
+
+      .card-bg {
+        fill: #050814;
+        fill-opacity: 0.9;
+        stroke: #1A253C;
+        stroke-width: 1.5;
+        transition: all 0.3s ease;
+      }
+
+      svg:hover .card-bg {
+        stroke: #FFB86C;
+        filter: url(#card-glow);
+      }
+      
+      .floating-item {
+        animation: float-up 2.5s infinite ease-in-out;
+      }
+      
+      @keyframes float-up {
+        0% { transform: translateY(0px); opacity: 0; }
+        50% { opacity: 1; }
+        100% { transform: translateY(-20px); opacity: 0; }
+      }
+    </style>
+    
+    <filter id="card-glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Card Frame -->
+  <rect class="card-bg" width="480" height="240" rx="8" />
+
+  <!-- Grid overlay -->
+  <path d="M 20 0 v 240 M 40 0 v 240 M 440 0 v 240 M 460 0 v 240" fill="none" stroke="#6272A4" stroke-width="0.5" opacity="0.03" />
+
+  <!-- Title & Icon -->
+  <g transform="translate(20, 20)">
+    <!-- Terminal Icon -->
+    <rect x="0" y="2" width="14" height="11" rx="1.5" fill="none" stroke="#FFB86C" stroke-width="1.5" />
+    <path d="M 3 5.5 l 2 2 l -2 2" fill="none" stroke="#FFB86C" stroke-width="1.2" />
+    <text class="title-text" x="22" y="13">CURRENTLY...</text>
+  </g>
+
+  <!-- Bullet points list -->
+  <g transform="translate(20, 60)">
+    <!-- Point 1 -->
+    <g transform="translate(0, 0)">
+      <text class="bullet-symbol" x="0" y="12">&gt;</text>
+      <text class="body-text" x="15" y="12">Learning new technologies</text>
+    </g>
+    <!-- Point 2 -->
+    <g transform="translate(0, 26)">
+      <text class="bullet-symbol" x="0" y="12">&gt;</text>
+      <text class="body-text" x="15" y="12">Building cool projects</text>
+    </g>
+    <!-- Point 3 -->
+    <g transform="translate(0, 52)">
+      <text class="bullet-symbol" x="0" y="12">&gt;</text>
+      <text class="body-text" x="15" y="12">Solving DSA problems</text>
+    </g>
+    <!-- Point 4 -->
+    <g transform="translate(0, 78)">
+      <text class="bullet-symbol" x="0" y="12">&gt;</text>
+      <text class="body-text" x="15" y="12">Improving everyday</text>
+    </g>
+    <!-- Point 5 -->
+    <g transform="translate(0, 104)">
+      <text class="bullet-symbol" x="0" y="12">&gt;</text>
+      <text class="body-text" x="15" y="12">Coffee ☕ + Code 💻 = Magic ✨</text>
+    </g>
+  </g>
+
+  <!-- Laptop & Coding Cinnamoroll (Bottom Right) -->
+  <g transform="translate(30, 0)">
+    <!-- Laptop setup -->
+    <g transform="translate(325, 150)">
+      <!-- Base -->
+      <polygon points="10,25 45,25 40,33 5,33" fill="#2C3E50" stroke="#1A252C" stroke-width="1" />
+      <!-- Screen -->
+      <polygon points="40,5 55,25 40,25 25,5" fill="#34495E" stroke="#1A252C" stroke-width="1" />
+      <!-- Screen glow -->
+      <polygon points="27,7 39,7 52,24 40,24" fill="#8BE9FD" opacity="0.8" />
+    </g>
+
+    <!-- Coding Cinnamoroll -->
+    <g transform="translate(310, 125)">
+      <!-- Sitting Body -->
+      <path d="M -7 9 Q 0 15 7 9 C 11 17, 11 23, 7 27 Q 0 29 -7 27 Q -11 23 -7 9 Z" fill="#FFFFFF" stroke="#1A252C" stroke-width="1.2" />
+      <!-- Left Foot -->
+      <ellipse cx="-10" cy="27" rx="3.5" ry="2.2" fill="#FFFFFF" stroke="#1A252C" stroke-width="1.2" />
+      <!-- Right Foot -->
+      <ellipse cx="8" cy="27" rx="3.5" ry="2.2" fill="#FFFFFF" stroke="#1A252C" stroke-width="1.2" />
+      
+      <!-- Head -->
+      <ellipse cx="0" cy="0" rx="17" ry="11" fill="#FFFFFF" stroke="#1A252C" stroke-width="1.2" />
+      <!-- Left Ear -->
+      <path d="M -13 -2 C -24 -2, -31 8, -25 12 C -21 13, -17 9, -14 4" fill="#FFFFFF" stroke="#1A252C" stroke-width="1.2" />
+      <!-- Right Ear -->
+      <path d="M 13 -2 C 24 -2, 31 8, 25 12 C 21 13, 17 9, 14 4" fill="#FFFFFF" stroke="#1A252C" stroke-width="1.2" />
+      
+      <!-- Blue Eyes -->
+      <ellipse cx="-5" cy="0.5" rx="1.1" ry="1.8" fill="#6BA4FF" />
+      <ellipse cx="5" cy="0.5" rx="1.1" ry="1.8" fill="#6BA4FF" />
+      
+      <!-- Pink Blush -->
+      <ellipse cx="-9.5" cy="2.5" rx="2" ry="1" fill="#FF80A0" opacity="0.6" />
+      <ellipse cx="9.5" cy="2.5" rx="2" ry="1" fill="#FF80A0" opacity="0.6" />
+      
+      <!-- Mouth -->
+      <path d="M -1 2.5 Q 0 3.5 1 2.5" fill="none" stroke="#1A252C" stroke-width="0.8" />
+      
+      <!-- Typing Arms (SMIL animated paths) -->
+      <!-- Left Arm -->
+      <path d="M -5 13 C 5 13, 15 28, 25 30" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round">
+        <animate attributeName="d" values="M -5 13 C 5 13, 15 28, 25 30; M -5 13 C 5 13, 15 26, 25 28; M -5 13 C 5 13, 15 28, 25 30" dur="0.2s" repeatCount="indefinite" />
+      </path>
+      <!-- Right Arm -->
+      <path d="M 0 13 C 10 13, 20 28, 28 30" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round">
+        <animate attributeName="d" values="M 0 13 C 10 13, 20 28, 28 30; M 0 13 C 10 13, 20 29, 28 32; M 0 13 C 10 13, 20 28, 28 30" dur="0.24s" repeatCount="indefinite" />
+      </path>
+    </g>
+
+    <!-- Floating code element </&gt; -->
+    <g class="floating-item" transform="translate(385, 140)">
+      <text font-family="'Share Tech Mono', monospace" font-size="8" fill="#8BE9FD">&lt;/&gt;</text>
+    </g>
+  </g>
+</svg>

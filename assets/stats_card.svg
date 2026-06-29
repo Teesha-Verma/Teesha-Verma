@@ -1,191 +1,155 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" width="480" height="220">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 240" width="480" height="240">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;family=Share+Tech+Mono&amp;display=swap');
       
-      .label-text {
-        font-family: 'Share Tech Mono', 'Consolas', 'Courier New', monospace;
-        font-size: 13px;
-        fill: #98FB98;
-      }
-      
-      .value-text {
-        font-family: 'Share Tech Mono', 'Consolas', 'Courier New', monospace;
-        font-size: 13px;
-        fill: #FFFFFF;
-      }
-      
       .title-text {
-        font-family: 'Press Start 2P', 'Courier New', monospace;
+        font-family: 'Press Start 2P', monospace;
         font-size: 11px;
-        fill: #57F287;
+        fill: #8BE9FD;
         font-weight: bold;
       }
       
-      .exp-text {
-        font-family: 'Share Tech Mono', 'Consolas', 'Courier New', monospace;
-        font-size: 11px;
-        fill: #00C896;
-        text-anchor: middle;
+      .stat-label {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 12px;
+        fill: #6272A4;
       }
       
-      .glow-border {
-        filter: url(#neon-glow);
+      .stat-val {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 16px;
+        fill: #FFFFFF;
+        font-weight: bold;
+      }
+
+      .card-bg {
+        fill: #050814;
+        fill-opacity: 0.9;
+        stroke: #1A253C;
+        stroke-width: 1.5;
+        transition: all 0.3s ease;
+      }
+
+      svg:hover .card-bg {
+        stroke: #8BE9FD;
+        filter: url(#card-glow);
       }
       
       .pulse-heart {
-        animation: pulse 1.5s infinite;
+        animation: heart-beat 1.5s infinite;
         transform-origin: center;
       }
       
-      @keyframes pulse {
+      @keyframes heart-beat {
         0%, 100% { transform: scale(1); }
-        50% { transform: scale(1.15); }
+        50% { transform: scale(1.1); }
       }
     </style>
-
-    <!-- Filters -->
-    <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
+    
+    <filter id="card-glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
 
-    <!-- Pattern -->
-    <pattern id="card-grid" width="20" height="20" patternUnits="userSpaceOnUse">
-      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#2ECC71" stroke-width="0.75" opacity="0.04" />
-    </pattern>
-
-    <!-- Bunny Head Paths (for donut center) -->
-    <g id="bunny-head">
-      <!-- White head base (rows 6 to 15, x range 0 to 17) -->
-      <path d="M 2 6 h 1 v 1 h -1 Z M 4 6 h 1 v 1 h -1 Z M 13 6 h 1 v 1 h -1 Z M 15 6 h 1 v 1 h -1 Z M 3 7 h 2 v 1 h -2 Z M 7 7 h 4 v 1 h -4 Z M 13 7 h 2 v 1 h -2 Z M 3 8 h 12 v 1 h -12 Z M 2 9 h 14 v 1 h -14 Z M 1 10 h 16 v 1 h -16 Z M 1 11 h 2 v 1 h -2 Z M 4 11 h 8 v 1 h -8 Z M 13 11 h 4 v 1 h -4 Z M 1 12 h 16 v 1 h -16 Z M 1 13 h 1 v 1 h -1 Z M 4 13 h 4 v 1 h -4 Z M 9 13 h 4 v 1 h -4 Z M 15 13 h 2 v 1 h -2 Z M 1 14 h 1 v 1 h -1 Z M 4 14 h 3 v 1 h -3 Z M 8 14 h 1 v 1 h -1 Z M 10 14 h 3 v 1 h -3 Z M 15 14 h 2 v 1 h -2 Z M 2 15 h 14 v 1 h -14 Z" fill="#FFFFFF" />
-      <!-- Pink Ears -->
-      <path d="M 3 6 h 1 v 1 h -1 Z M 14 6 h 1 v 1 h -1 Z" fill="#FFAEBC" />
-      <!-- Blush Cheeks -->
-      <path d="M 2 13 h 2 v 1 h -2 Z M 13 13 h 2 v 1 h -2 Z M 2 14 h 2 v 1 h -2 Z M 13 14 h 2 v 1 h -2 Z" fill="#FF8B94" />
-      <!-- Eyes & Mouth -->
-      <path d="M 3 11 h 1 v 1 h -1 Z M 12 11 h 1 v 1 h -1 Z M 8 13 h 1 v 1 h -1 Z M 7 14 h 1 v 1 h -1 Z M 9 14 h 1 v 1 h -1 Z" fill="#1A252C" />
-      <!-- Outline -->
-      <path d="M 1 6 h 1 v 1 h -1 Z M 5 6 h 1 v 1 h -1 Z M 7 6 h 4 v 1 h -4 Z M 12 6 h 1 v 1 h -1 Z M 16 6 h 1 v 1 h -1 Z M 2 7 h 1 v 1 h -1 Z M 5 7 h 2 v 1 h -2 Z M 11 7 h 2 v 1 h -2 Z M 15 7 h 1 v 1 h -1 Z M 2 8 h 1 v 1 h -1 Z M 15 8 h 1 v 1 h -1 Z M 1 9 h 1 v 1 h -1 Z M 16 9 h 1 v 1 h -1 Z M 0 10 h 1 v 1 h -1 Z M 17 10 h 1 v 1 h -1 Z M 0 11 h 1 v 1 h -1 Z M 17 11 h 1 v 1 h -1 Z M 0 12 h 1 v 1 h -1 Z M 17 12 h 1 v 1 h -1 Z M 0 13 h 1 v 1 h -1 Z M 17 13 h 1 v 1 h -1 Z M 0 14 h 1 v 1 h -1 Z M 17 14 h 1 v 1 h -1 Z M 1 15 h 1 v 1 h -1 Z M 16 15 h 1 v 1 h -1 Z" fill="#1A252C" />
+    <!-- Pixel Heart definitions -->
+    <g id="pink-pixel-heart">
+      <path d="M 1 0 h 1 v 1 h -1 Z M 3 0 h 1 v 1 h -1 Z M 0 1 h 5 v 2 h -5 Z M 1 3 h 3 v 1 h -3 Z M 2 4 h 1 v 1 h -1 Z" fill="#FF75A0" />
     </g>
-
-    <!-- Heart Path -->
-    <g id="pixel-heart">
-      <path d="M 1 0 h 1 v 1 h -1 Z M 3 0 h 1 v 1 h -1 Z M 0 1 h 5 v 2 h -5 Z M 1 3 h 3 v 1 h -3 Z M 2 4 h 1 v 1 h -1 Z" fill="#FF4B4B" />
-    </g>
-    <!-- Empty Heart -->
-    <g id="pixel-heart-empty">
-      <path d="M 1 0 h 1 v 1 h -1 Z M 3 0 h 1 v 1 h -1 Z M 0 1 h 5 v 2 h -5 Z M 1 3 h 3 v 1 h -3 Z M 2 4 h 1 v 1 h -1 Z" fill="#2C3E50" opacity="0.5" />
+    <g id="gray-pixel-heart">
+      <path d="M 1 0 h 1 v 1 h -1 Z M 3 0 h 1 v 1 h -1 Z M 0 1 h 5 v 2 h -5 Z M 1 3 h 3 v 1 h -3 Z M 2 4 h 1 v 1 h -1 Z" fill="#2C3E50" opacity="0.6" />
     </g>
   </defs>
 
-  <!-- Card Background -->
-  <rect width="480" height="220" fill="#080B18" fill-opacity="0.9" rx="8" stroke="#00C896" stroke-width="1.5" class="glow-border" />
-  <rect width="480" height="220" fill="url(#card-grid)" rx="8" />
+  <!-- Card Frame -->
+  <rect class="card-bg" width="480" height="240" rx="8" />
 
-  <!-- Soft light spot -->
-  <circle cx="240" cy="110" r="100" fill="#2ECC71" opacity="0.04" filter="url(#neon-glow)" />
+  <!-- Grid overlay -->
+  <path d="M 20 0 v 240 M 40 0 v 240 M 440 0 v 240 M 460 0 v 240" fill="none" stroke="#6272A4" stroke-width="0.5" opacity="0.03" />
 
-  <!-- Left: Donut Chart -->
-  <g transform="translate(15, 0)">
-    <!-- Base Donut Gray Circle -->
-    <circle cx="80" cy="100" r="45" fill="none" stroke="#10182D" stroke-width="10" />
-    
-    <!-- Animated Green Progress Donut (88%) -->
-    <!-- circumference is 2 * pi * 45 = 282.74 -->
-    <!-- 88% is 248.8 stroke-dasharray, 33.9 dashoffset -->
-    <circle cx="80" cy="100" r="45" fill="none" stroke="#2ECC71" stroke-width="10" 
-            stroke-dasharray="282.74" stroke-dashoffset="282.74" stroke-linecap="round" transform="rotate(-90 80 100)">
-      <animate attributeName="stroke-dashoffset" values="282.74; 33.9" dur="2s" fill="freeze" />
-    </circle>
-
-    <!-- Glowing effect on Donut -->
-    <circle cx="80" cy="100" r="45" fill="none" stroke="#57F287" stroke-width="10" 
-            stroke-dasharray="282.74" stroke-dashoffset="282.74" stroke-linecap="round" opacity="0.4"
-            class="glow-border" transform="rotate(-90 80 100)">
-      <animate attributeName="stroke-dashoffset" values="282.74; 33.9" dur="2s" fill="freeze" />
-    </circle>
-
-    <!-- Cute bunny head in the center -->
-    <use href="#bunny-head" transform="translate(63, 85) scale(1.8)" />
-    
-    <!-- Level Badge -->
-    <rect x="55" y="152" width="50" height="18" rx="4" fill="#0A1024" stroke="#22C55E" stroke-width="1" />
-    <text class="title-text" x="80" y="165" text-anchor="middle" font-size="8">LVL 24</text>
-    
-    <!-- Exp text -->
-    <text class="exp-text" x="80" y="185">EXP 88% :: NEXT LVL</text>
+  <!-- Title & Icon -->
+  <g transform="translate(20, 20)">
+    <!-- Stats Bar chart Icon -->
+    <path d="M 0 12 h 3 v -8 h -3 Z M 5 12 h 3 v -12 h -3 Z M 10 12 h 3 v -5 h -3 Z" fill="#8BE9FD" transform="translate(0, 2)" />
+    <text class="title-text" x="22" y="13">GITHUB STATS</text>
   </g>
 
-  <!-- Right: DEV STATS (HP, MP, Levels, etc.) -->
-  <g transform="translate(180, 25)">
-    <!-- Header -->
-    <text class="title-text" x="0" y="0">CHARACTER STATUS</text>
-    
-    <!-- Stats Rows -->
-    
-    <!-- HP / Energy Row -->
-    <g transform="translate(0, 18)">
-      <text class="label-text" x="0" y="10">HP (ENERGY):</text>
-      <!-- Hearts -->
-      <g transform="translate(100, 2)">
-        <use href="#pixel-heart" x="0" y="0" class="pulse-heart" />
-        <use href="#pixel-heart" x="10" y="0" class="pulse-heart" style="animation-delay: 0.2s;" />
-        <use href="#pixel-heart" x="20" y="0" class="pulse-heart" style="animation-delay: 0.4s;" />
-        <use href="#pixel-heart" x="30" y="0" class="pulse-heart" style="animation-delay: 0.6s;" />
-        <use href="#pixel-heart" x="40" y="0" class="pulse-heart" style="animation-delay: 0.8s;" />
-      </g>
-    </g>
-    
-    <!-- Spark Processing Progress Bar -->
-    <g transform="translate(0, 48)">
-      <text class="label-text" x="0" y="10">SPARK PROCESSING:</text>
-      <text class="value-text" x="240" y="10" text-anchor="end">92%</text>
-      <!-- Progress Track -->
-      <rect x="0" y="15" width="240" height="8" rx="2" fill="#10182D" stroke="#1A253C" stroke-width="1" />
-      <!-- Progress Fill -->
-      <rect x="0" y="15" width="0" height="8" rx="2" fill="#2ECC71" class="glow-border">
-        <animate attributeName="width" values="0; 220.8" dur="1.8s" fill="freeze" />
-      </rect>
+  <!-- Left Stats details -->
+  <g transform="translate(20, 58)">
+    <!-- Total Stars -->
+    <g transform="translate(0, 0)">
+      <!-- Star Icon -->
+      <polygon points="8,0 10,6 16,6 11,10 13,16 8,12 3,16 5,10 0,6 6,6" fill="#FFD166" />
+      <text class="stat-label" x="24" y="8">Total Stars</text>
+      <text class="stat-val" x="24" y="24">120+</text>
     </g>
 
-    <!-- Cloud Native Infrastructure -->
-    <g transform="translate(0, 78)">
-      <text class="label-text" x="0" y="10">CLOUD NATIVE INFRA:</text>
-      <text class="value-text" x="240" y="10" text-anchor="end">85%</text>
-      <!-- Progress Track -->
-      <rect x="0" y="15" width="240" height="8" rx="2" fill="#10182D" stroke="#1A253C" stroke-width="1" />
-      <!-- Progress Fill -->
-      <rect x="0" y="15" width="0" height="8" rx="2" fill="#00C896" class="glow-border">
-        <animate attributeName="width" values="0; 204" dur="1.8s" fill="freeze" />
-      </rect>
+    <!-- Commits -->
+    <g transform="translate(0, 42)">
+      <!-- Branch/Commit Icon -->
+      <circle cx="4" cy="4" r="3" fill="none" stroke="#50FA7B" stroke-width="1.5" />
+      <circle cx="12" cy="12" r="3" fill="none" stroke="#50FA7B" stroke-width="1.5" />
+      <line x1="4" y1="7" x2="4" y2="12" stroke="#50FA7B" stroke-width="1.5" />
+      <path d="M 4 12 Q 4 12 12 12" fill="none" stroke="#50FA7B" stroke-width="1.5" />
+      <text class="stat-label" x="24" y="8">Commits</text>
+      <text class="stat-val" x="24" y="24">1.2k+</text>
     </g>
 
-    <!-- AI Systems Engineering -->
-    <g transform="translate(0, 108)">
-      <text class="label-text" x="0" y="10">AI SYSTEMS ENG:</text>
-      <text class="value-text" x="240" y="10" text-anchor="end">80%</text>
-      <!-- Progress Track -->
-      <rect x="0" y="15" width="240" height="8" rx="2" fill="#10182D" stroke="#1A253C" stroke-width="1" />
-      <!-- Progress Fill -->
-      <rect x="0" y="15" width="0" height="8" rx="2" fill="#22C55E" class="glow-border">
-        <animate attributeName="width" values="0; 192" dur="1.8s" fill="freeze" />
-      </rect>
+    <!-- PRs -->
+    <g transform="translate(0, 84)">
+      <!-- Pull Request Icon -->
+      <circle cx="4" cy="4" r="2.5" fill="none" stroke="#BD93F9" stroke-width="1.5" />
+      <circle cx="12" cy="4" r="2.5" fill="none" stroke="#BD93F9" stroke-width="1.5" />
+      <circle cx="8" cy="12" r="2.5" fill="none" stroke="#BD93F9" stroke-width="1.5" />
+      <path d="M 4 6.5 v 3 Q 4 12 8 12 M 12 6.5 v 3 Q 12 12 8 12" fill="none" stroke="#BD93F9" stroke-width="1.5" />
+      <text class="stat-label" x="24" y="8">PRs</text>
+      <text class="stat-val" x="24" y="24">80+</text>
     </g>
+
+    <!-- Repositories -->
+    <g transform="translate(0, 126)">
+      <!-- Database Icon -->
+      <path d="M 0 2 C 0 0, 12 0, 12 2 v 2 C 12 6, 0 6, 0 4 Z M 0 5 v 2.5 C 0 9.5, 12 9.5, 12 7.5 v -2.5 M 0 9 v 2.5 C 0 13.5, 12 13.5, 12 11.5 v -2.5" fill="none" stroke="#FF75A0" stroke-width="1.5" />
+      <text class="stat-label" x="24" y="8">Repositories</text>
+      <text class="stat-val" x="24" y="24">30+</text>
+    </g>
+  </g>
+
+  <!-- Right Donut & Mascot -->
+  <g transform="translate(360, 105)">
+    <!-- Base Gray Circle -->
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#10182D" stroke-width="8" />
     
-    <!-- Code Cleanliness / Quality -->
-    <g transform="translate(0, 138)">
-      <text class="label-text" x="0" y="10">CLEAN CODE &amp; QA:</text>
-      <text class="value-text" x="240" y="10" text-anchor="end">95%</text>
-      <!-- Progress Track -->
-      <rect x="0" y="15" width="240" height="8" rx="2" fill="#10182D" stroke="#1A253C" stroke-width="1" />
-      <!-- Progress Fill -->
-      <rect x="0" y="15" width="0" height="8" rx="2" fill="#57F287" class="glow-border">
-        <animate attributeName="width" values="0; 228" dur="1.8s" fill="freeze" />
-      </rect>
+    <!-- Pink Progress Circle (75%) -->
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#FF75A0" stroke-width="8" 
+            stroke-dasharray="263.89" stroke-dashoffset="66" stroke-linecap="round" transform="rotate(-90)" />
+
+    <!-- Blue Progress Accent (25%) -->
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#8BE9FD" stroke-width="8" 
+            stroke-dasharray="263.89" stroke-dashoffset="197.9" stroke-linecap="round" transform="rotate(180)" />
+
+    <!-- Cute Cinnamoroll head in the center -->
+    <g transform="translate(0, -2)">
+      <ellipse cx="0" cy="0" rx="14" ry="9" fill="#FFFFFF" stroke="#1A252C" stroke-width="1.2" />
+      <path d="M -9 -4 C -18 -4, -24 5, -18 9 C -14 10, -10 6, -7 1" fill="#FFFFFF" stroke="#1A252C" stroke-width="1.2" />
+      <path d="M 9 -4 C 18 -4, 24 5, 18 9 C 14 10, 10 6, 7 1" fill="#FFFFFF" stroke="#1A252C" stroke-width="1.2" />
+      <ellipse cx="-4.5" cy="0.5" rx="1" ry="1.6" fill="#6BA4FF" />
+      <ellipse cx="4.5" cy="0.5" rx="1" ry="1.6" fill="#6BA4FF" />
+      <ellipse cx="-7.5" cy="2.2" rx="1.8" ry="0.9" fill="#FF80A0" opacity="0.6" />
+      <ellipse cx="8.5" cy="2.2" rx="1.8" ry="0.9" fill="#FF80A0" opacity="0.6" />
+      <path d="M -1 2.2 Q 0 3 1 2.2" fill="none" stroke="#1A252C" stroke-width="0.8" />
+    </g>
+
+    <!-- Hearts underneath Donut (y=65 relative to center (0,0)) -->
+    <g transform="translate(-25, 60)">
+      <use href="#pink-pixel-heart" x="0" y="0" class="pulse-heart" />
+      <use href="#pink-pixel-heart" x="10" y="0" class="pulse-heart" style="animation-delay: 0.2s;" />
+      <use href="#pink-pixel-heart" x="20" y="0" class="pulse-heart" style="animation-delay: 0.4s;" />
+      <use href="#gray-pixel-heart" x="30" y="0" />
+      <use href="#gray-pixel-heart" x="40" y="0" />
     </g>
   </g>
 </svg>
