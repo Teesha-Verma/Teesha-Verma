@@ -1,63 +1,131 @@
-# 👋 Hi, I'm Teesha Verma
+# Hi there 👋, I'm Teesha Verma
 
-🎓 3rd Year B.Tech CSE Student | 💡 Aspiring AI/ML Engineer | 🌐 Web Developer in Progress  
- | 💻 Curious Creator | 🧠 Future-Ready Problem Solver  
+### 🚀 Computer Science Student | Aspiring Cloud-Native Data Engineer | Building Data & AI Solutions
 
----
+I'm a final-year B.Tech Computer Science student passionate about designing scalable data systems and solving real-world problems with cloud technologies.
 
-## 🚀 My Mission
+Currently, I'm focused on mastering modern data engineering by building end-to-end projects involving cloud platforms, distributed data processing, data lakes, ETL pipelines, SQL, and analytics.
 
-_"From beginner to builder — I don't follow trends, I prepare for the future."_
-
-With a deep desire to create intelligent, impactful systems, I’m learning to bridge imagination with technology — whether it's AI companions, fake detection systems, or generative art tools.
+I enjoy learning by building, contributing to projects, and continuously improving my software engineering skills.
 
 ---
 
-## 🧠 Technologies & Tools
+## 👨‍💻 About Me
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+* 🎓 Final Year B.Tech Computer Science Student
+* ☁️ Aspiring Cloud-Native Data Engineer
+* 💡 Interested in Data Engineering, Cloud Computing, Distributed Systems & AI
+* 🌱 Currently learning Apache Spark, Delta Lake, Data Lakes, Azure & AWS
+* 💼 Working with Angular and .NET during my internship
+* 📚 Always exploring better software architecture and engineering practices
+
+---
+
+## ⚡ Tech Stack
+
+### Programming Languages
+
+* Java
+* Python
+* SQL
+* JavaScript
+* C#
+
+### Web Development
+
+* Angular
+* HTML
+* CSS
+* JavaScript
+* .NET
+* REST APIs
+
+### Databases
+
+* PostgreSQL
+* MySQL
+* MongoDB
+
+### Data Engineering
+
+* Apache Spark (Learning)
+* PySpark (Learning)
+* Delta Lake (Learning)
+* Parquet
+* ETL Pipelines
+* Data Warehousing
+* Data Lakes
+
+### Cloud
+
+* Microsoft Azure
+* Amazon Web Services (AWS)
+
+### Tools
+
+* Git
+* GitHub
+* VS Code
+* Postman
+* Docker (Learning)
+
+---
+
+## 🚀 Current Focus
+
+I'm currently building projects around:
+
+* Cloud-native data pipelines
+* Distributed data processing
+* ETL workflows
+* Data Lake architecture
+* PostgreSQL
+* Apache Spark
+* Azure Data Engineering
+* AWS Data Engineering
+
+---
+
+## 📌 Featured Projects
+
+### 🛡️ CodeGuard
+
+AI-powered secure code analysis platform with intelligent vulnerability detection.
+
+### 🏛️ CivicMind AI
+
+Cloud-based AI platform designed to assist citizens with government services using intelligent workflows.
+
+### 📊 Machine Learning Projects
+
+Collection of machine learning projects including predictive analytics and data preprocessing.
+
+### 🌐 Full Stack Applications
+
+Modern web applications built using Angular, .NET, and JavaScript.
 
 ---
 
 ## 📈 GitHub Stats
 
-![Teesha's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Teesha-Verma&show_icons=true&theme=tokyonight)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Teesha-Verma&layout=compact&theme=tokyonight)
+<p align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight"/>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&theme=tokyonight"/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=tokyonight"/>
+
+</p>
 
 ---
 
-## 💼 Currently Working On
+## 🤝 Connect With Me
 
-- 🔧 Building Python mini-projects (ML + automation)
-- 🌱 Exploring the MERN stack
-- 🤖 Exploring **Generative AI concepts and LLM-based applications*
-
----
-
-## 🛠 Upcoming Projects
-
-- 👁️‍🗨️ Deepfake Detection System (Video/Image)
-- 🗣️ AI-Powered Chatbot (LangChain)
-- 🎨 Generative Art Web App
-- 🎮 AI Game with Python + ML Logic
-
----
-## Opportunities
-- Seeking **internships in AI/ML**
-- Open to **open-source collaborations**
-- Interested in real-world ML and data-focused projects
+* LinkedIn
+* Email
+* Portfolio (Coming Soon)
 
 ---
 
-## 🌐 Connect with Me
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-TeeshaVerma-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/teeshaverma)
-[![GitHub](https://img.shields.io/badge/GitHub-TeeshaVerma-black?style=for-the-badge&logo=github)](https://github.com/Teesha-Verma)
-
----
+> *"Build things that scale. Learn continuously. Stay curious."*
